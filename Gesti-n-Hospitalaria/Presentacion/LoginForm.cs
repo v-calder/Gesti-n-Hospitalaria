@@ -41,7 +41,8 @@ namespace Presentacion
                                        usuarioLogueado.CodigoRol == 2 ? "Médico" : "Recepcionista";
 
                 
-
+                    DashboardForm dashboard = new DashboardForm();
+                    dashboard.Show();
                     this.Hide();
                 }
                 else
