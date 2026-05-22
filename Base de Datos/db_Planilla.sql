@@ -1,5 +1,6 @@
 CREATE DATABASE GestionHospitalariaDB;
 GO
+
 USE GestionHospitalariaDB;
 GO
 
@@ -114,3 +115,72 @@ SELECT
     U.Estado
 FROM Tbl_Usuarios U
 INNER JOIN Tbl_Roles R ON U.CodigoRol = R.CodigoRol;
+
+---- INTEGRANTE No 2 -----
+CREATE TABLE Tbl_Sanatorios (
+    CodigoSanatorio INT PRIMARY KEY IDENTITY(1,1),
+    Nombre VARCHAR(150),
+    Ubicacion VARCHAR(150),
+    CapacidadHabitaciones INT,
+    Telefono VARCHAR(20),
+    Director VARCHAR(150),
+    TipoSanatorio VARCHAR(50),
+    CostoOperacionDiario DECIMAL(10,2),
+    NivelServicio VARCHAR(50),
+    Estado BIT,
+    UsuarioSistema VARCHAR(50),
+    FechaSistema DATE,
+    HoraSistema TIME
+);
+
+-- Relacionar Atenciones con Sanatorios ahora que existe la tabla
+ALTER TABLE Tbl_AtencionesPacientes ADD CONSTRAINT FK_Atencion_Sanatorio 
+FOREIGN KEY (CodigoSanatorio) REFERENCES Tbl_Sanatorios(CodigoSanatorio);
+
+CREATE TABLE Tbl_Hospitalizaciones (
+    CodigoHospitalizacion INT PRIMARY KEY IDENTITY(1,1),
+    CodigoAtencion INT FOREIGN KEY REFERENCES Tbl_AtencionesPacientes(CodigoAtencion),
+    NumeroHabitacion VARCHAR(20),
+    Dias INT,
+    CostoDia DECIMAL(10,2),
+    CostoMedico DECIMAL(10,2),
+    SubTotal DECIMAL(10,2),
+    Descuento DECIMAL(10,2),
+    TotalHospitalizacion DECIMAL(10,2),
+    Estado BIT,
+    UsuarioSistema VARCHAR(50),
+    FechaSistema DATE,
+    HoraSistema TIME
+);
+
+CREATE TABLE Tbl_Laboratorios (
+    CodigoLaboratorio INT PRIMARY KEY IDENTITY(1,1),
+    CodigoAtencion INT FOREIGN KEY REFERENCES Tbl_AtencionesPacientes(CodigoAtencion),
+    TipoExamen VARCHAR(100),
+    CostoExamen DECIMAL(10,2),
+    Cantidad INT,
+    Urgente BIT,
+    RecargoUrgente DECIMAL(10,2),
+    SubTotal DECIMAL(10,2),
+    TotalLaboratorio DECIMAL(10,2),
+    Estado BIT,
+    UsuarioSistema VARCHAR(50),
+    FechaSistema DATE,
+    HoraSistema TIME
+);
+
+CREATE TABLE Tbl_Dietas (
+    CodigoDieta INT PRIMARY KEY IDENTITY(1,1),
+    CodigoHospitalizacion INT FOREIGN KEY REFERENCES Tbl_Hospitalizaciones(CodigoHospitalizacion),
+    TipoDieta VARCHAR(100),
+    CostoDiario DECIMAL(10,2),
+    Dias INT,
+    Nutricionista VARCHAR(150),
+    SubTotal DECIMAL(10,2),
+    Impuesto DECIMAL(10,2),
+    TotalDieta DECIMAL(10,2),
+    Estado BIT,
+    UsuarioSistema VARCHAR(50),
+    FechaSistema DATE,
+    HoraSistema TIME
+);
