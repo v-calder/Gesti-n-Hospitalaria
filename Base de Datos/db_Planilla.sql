@@ -184,3 +184,84 @@ CREATE TABLE Tbl_Dietas (
     FechaSistema DATE,
     HoraSistema TIME
 );
+
+
+-- ====================================================================
+-- 👥 INTEGRANTE 3: FINANZAS Y FACTURACIÓN
+-- ====================================================================
+CREATE TABLE Tbl_SegurosMedicos (
+    CodigoSeguro INT PRIMARY KEY IDENTITY(1,1),
+    NombreSeguro VARCHAR(150),
+    TipoSeguro VARCHAR(50),
+    PorcentajeCobertura DECIMAL(10,2),
+    Telefono VARCHAR(20),
+    Direccion VARCHAR(200),
+    MontoMaximo DECIMAL(10,2),
+    CorreoContacto VARCHAR(100), 
+    Estado BIT,
+    UsuarioSistema VARCHAR(50),
+    FechaSistema DATE,
+    HoraSistema TIME
+);
+
+CREATE TABLE Tbl_Facturas (
+    CodigoFactura INT PRIMARY KEY IDENTITY(1,1),
+    CodigoAtencion INT FOREIGN KEY REFERENCES Tbl_AtencionesPacientes(CodigoAtencion),
+    CodigoSeguro INT FOREIGN KEY REFERENCES Tbl_SegurosMedicos(CodigoSeguro),
+    FechaFactura DATE,
+    SubTotal DECIMAL(10,2),
+    DescuentoSeguro DECIMAL(10,2),
+    Impuesto DECIMAL(10,2),
+    TotalPagar DECIMAL(10,2),
+    Estado BIT,
+    UsuarioSistema VARCHAR(50),
+    FechaSistema DATE,
+    HoraSistema TIME
+);
+
+CREATE TABLE Tbl_DetalleFacturas (
+    CodigoDetalle INT PRIMARY KEY IDENTITY(1,1),
+    CodigoFactura INT FOREIGN KEY REFERENCES Tbl_Facturas(CodigoFactura),
+    TipoConcepto VARCHAR(50), 
+    CodigoReferencia INT,
+    DescripcionReferencia VARCHAR(200),
+    Cantidad INT,
+    PrecioUnitario DECIMAL(10,2),
+    SubTotal DECIMAL(10,2),
+    Impuesto DECIMAL(10,2),
+    TotalDetalle DECIMAL(10,2),
+    Estado BIT,
+    UsuarioSistema VARCHAR(50),
+    FechaSistema DATE,
+    HoraSistema TIME
+);
+
+CREATE TABLE Tbl_Pagos (
+    CodigoPago INT PRIMARY KEY IDENTITY(1,1),
+    CodigoFactura INT FOREIGN KEY REFERENCES Tbl_Facturas(CodigoFactura),
+    FechaPago DATE,
+    MontoFactura DECIMAL(10,2),
+    MontoPagado DECIMAL(10,2),
+    MetodoPago VARCHAR(50),
+    Mora DECIMAL(10,2),
+    Cambio DECIMAL(10,2),
+    TotalCancelado DECIMAL(10,2),
+    Estado BIT,
+    UsuarioSistema VARCHAR(50),
+    FechaSistema DATE,
+    HoraSistema TIME
+);
+
+-- ====================================================================
+-- INSERCIÓN DE DATOS DE AUDITORÍA DE PRUEBA
+-- ====================================================================
+
+INSERT INTO Tbl_SegurosMedicos (NombreSeguro, TipoSeguro, PorcentajeCobertura, Telefono, Direccion, MontoMaximo, CorreoContacto, Estado, UsuarioSistema, FechaSistema, HoraSistema) VALUES 
+('Seguros El Roble, S.A.', 'Básico', 50.00, '2420-2000', '7a. Avenida 5-10, Zona 4', 75000.00, 'contacto@elroble.com.gt', 1, 'Victor Calderon', GETDATE(), GETDATE()),
+('Seguros G&T', 'Intermedio', 70.00, '2244-2244', 'Ruta 2, 2-39 Zona 4', 200000.00, 'corporativo@gyt.com.gt', 1, 'Victor Calderon', GETDATE(), GETDATE()),
+('Seguros Universales', 'Premium', 90.00, '2385-1222', 'Avenida Reforma 9-55, Zona 10', 500000.00, 'servicios@universales.com.gt', 1, 'Victor Calderon', GETDATE(), GETDATE()),
+('Aseguradora General, S.A.', 'Básico', 50.00, '2338-5555', '10a. Calle 3-17, Zona 10', 100000.00, 'info@general.com.gt', 1, 'Carlos Alvarez', GETDATE(), GETDATE());
+GO
+
+SELECT*FROM Tbl_SegurosMedicos
+
