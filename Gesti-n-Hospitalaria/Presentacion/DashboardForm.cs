@@ -175,7 +175,6 @@ namespace Presentacion
         private void btnPacientes_Click(object sender, EventArgs e)
         {
             ActivarBotonMenu(sender);
-            // Reemplaza 'PacientesView' por el nombre del UserControl que creará el Integrante 1
             // AbrirVistaEnContenedor(new PacientesView()); 
         }
 
@@ -198,6 +197,8 @@ namespace Presentacion
         private void btnFacturacion_Click(object sender, EventArgs e)
         {
             ActivarBotonMenu(sender);
+            AbrirVistaEnContenedor(new SegurosMedicosView());
+
         }
         #endregion
 
