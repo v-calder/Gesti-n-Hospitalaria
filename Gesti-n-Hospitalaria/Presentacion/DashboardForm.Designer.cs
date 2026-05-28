@@ -79,10 +79,9 @@
             // panelContenedor
             // 
             panelContenedor.Dock = DockStyle.Fill;
-            panelContenedor.Location = new Point(297, 60);
-            panelContenedor.Margin = new Padding(3, 4, 3, 4);
+            panelContenedor.Location = new Point(260, 45);
             panelContenedor.Name = "panelContenedor";
-            panelContenedor.Size = new Size(1148, 848);
+            panelContenedor.Size = new Size(953, 546);
             panelContenedor.TabIndex = 5;
             // 
             // sarauI_Line1
@@ -92,11 +91,10 @@
             sarauI_Line1.LineColor = Color.FromArgb(22, 36, 57);
             sarauI_Line1.LineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
             sarauI_Line1.LineWidth = 3;
-            sarauI_Line1.Location = new Point(9, 372);
-            sarauI_Line1.Margin = new Padding(3, 4, 3, 4);
+            sarauI_Line1.Location = new Point(8, 252);
             sarauI_Line1.Name = "sarauI_Line1";
             sarauI_Line1.Orientation = Sara_UI_Design.SaraControls.SaraUI_Line.LineOrientation.Horizontal;
-            sarauI_Line1.Size = new Size(277, 21);
+            sarauI_Line1.Size = new Size(242, 16);
             sarauI_Line1.TabIndex = 6;
             sarauI_Line1.Text = "sarauI_Line1";
             // 
@@ -105,9 +103,9 @@
             lblFecha.AutoSize = true;
             lblFecha.Font = new Font("Segoe UI", 20.25F, FontStyle.Italic, GraphicsUnit.Point, 0);
             lblFecha.ForeColor = Color.FromArgb(97, 114, 135);
-            lblFecha.Location = new Point(39, 193);
+            lblFecha.Location = new Point(34, 145);
             lblFecha.Name = "lblFecha";
-            lblFecha.Size = new Size(236, 46);
+            lblFecha.Size = new Size(191, 37);
             lblFecha.TabIndex = 5;
             lblFecha.Text = "19 - Mayo - 26";
             // 
@@ -116,9 +114,9 @@
             lblRol.AutoSize = true;
             lblRol.Font = new Font("Segoe UI Semilight", 12.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblRol.ForeColor = Color.FromArgb(113, 168, 214);
-            lblRol.Location = new Point(66, 167);
+            lblRol.Location = new Point(58, 125);
             lblRol.Name = "lblRol";
-            lblRol.Size = new Size(148, 30);
+            lblRol.Size = new Size(115, 23);
             lblRol.TabIndex = 4;
             lblRol.Text = "Administrador";
             // 
@@ -127,9 +125,9 @@
             lblNombreUsuario.AutoSize = true;
             lblNombreUsuario.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblNombreUsuario.ForeColor = Color.White;
-            lblNombreUsuario.Location = new Point(66, 133);
+            lblNombreUsuario.Location = new Point(58, 100);
             lblNombreUsuario.Name = "lblNombreUsuario";
-            lblNombreUsuario.Size = new Size(183, 32);
+            lblNombreUsuario.Size = new Size(145, 25);
             lblNombreUsuario.TabIndex = 3;
             lblNombreUsuario.Text = "Víctor Calderón";
             // 
@@ -144,10 +142,9 @@
             sarauI_PictureBox6.BorderSize = 0;
             sarauI_PictureBox6.GradientAngle = 50F;
             sarauI_PictureBox6.IsCircular = true;
-            sarauI_PictureBox6.Location = new Point(14, 133);
-            sarauI_PictureBox6.Margin = new Padding(3, 4, 3, 4);
+            sarauI_PictureBox6.Location = new Point(12, 100);
             sarauI_PictureBox6.Name = "sarauI_PictureBox6";
-            sarauI_PictureBox6.Size = new Size(46, 46);
+            sarauI_PictureBox6.Size = new Size(40, 40);
             sarauI_PictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
             sarauI_PictureBox6.TabIndex = 2;
             sarauI_PictureBox6.TabStop = false;
@@ -157,9 +154,9 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(33, 84);
+            label2.Location = new Point(29, 63);
             label2.Name = "label2";
-            label2.Size = new Size(252, 35);
+            label2.Size = new Size(201, 28);
             label2.TabIndex = 1;
             label2.Text = "HOSPITAL GENERAL";
             // 
@@ -173,9 +170,8 @@
             panel2.Controls.Add(label2);
             panel2.Controls.Add(sarauI_PictureBox5);
             panel2.Location = new Point(0, 0);
-            panel2.Margin = new Padding(3, 4, 3, 4);
             panel2.Name = "panel2";
-            panel2.Size = new Size(297, 254);
+            panel2.Size = new Size(260, 163);
             panel2.TabIndex = 0;
             // 
             // sarauI_PictureBox5
@@ -189,10 +185,9 @@
             sarauI_PictureBox5.GradientAngle = 50F;
             sarauI_PictureBox5.Image = Properties.Resources.Escudo_de_la_universidad_Mariano_Gálvez_Guatemala_svg;
             sarauI_PictureBox5.IsCircular = true;
-            sarauI_PictureBox5.Location = new Point(113, 8);
-            sarauI_PictureBox5.Margin = new Padding(3, 4, 3, 4);
+            sarauI_PictureBox5.Location = new Point(99, 6);
             sarauI_PictureBox5.Name = "sarauI_PictureBox5";
-            sarauI_PictureBox5.Size = new Size(69, 69);
+            sarauI_PictureBox5.Size = new Size(60, 60);
             sarauI_PictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
             sarauI_PictureBox5.TabIndex = 0;
             sarauI_PictureBox5.TabStop = false;
@@ -200,10 +195,9 @@
             // panelIndicador
             // 
             panelIndicador.BackColor = Color.FromArgb(0, 140, 128);
-            panelIndicador.Location = new Point(291, 15);
-            panelIndicador.Margin = new Padding(3, 4, 3, 4);
+            panelIndicador.Location = new Point(255, 11);
             panelIndicador.Name = "panelIndicador";
-            panelIndicador.Size = new Size(5, 67);
+            panelIndicador.Size = new Size(4, 50);
             panelIndicador.TabIndex = 6;
             // 
             // sarauI_Button6
@@ -221,10 +215,9 @@
             sarauI_Button6.IconPadding = 8;
             sarauI_Button6.IconSize = 16;
             sarauI_Button6.IconStyle = Sara_UI_Design.SaraControls.SaraUI_IconLibrary.SaraIconStyle.Outline;
-            sarauI_Button6.Location = new Point(0, 368);
-            sarauI_Button6.Margin = new Padding(3, 4, 3, 4);
+            sarauI_Button6.Location = new Point(0, 276);
             sarauI_Button6.Name = "sarauI_Button6";
-            sarauI_Button6.Size = new Size(297, 67);
+            sarauI_Button6.Size = new Size(260, 50);
             sarauI_Button6.TabIndex = 5;
             sarauI_Button6.Text = "Facturación y Pagos";
             sarauI_Button6.UseVisualStyleBackColor = false;
@@ -245,12 +238,11 @@
             sarauI_Button5.IconPadding = 8;
             sarauI_Button5.IconSize = 16;
             sarauI_Button5.IconStyle = Sara_UI_Design.SaraControls.SaraUI_IconLibrary.SaraIconStyle.Outline;
-            sarauI_Button5.Location = new Point(0, 297);
-            sarauI_Button5.Margin = new Padding(3, 4, 3, 4);
+            sarauI_Button5.Location = new Point(0, 223);
             sarauI_Button5.Name = "sarauI_Button5";
-            sarauI_Button5.Size = new Size(297, 67);
+            sarauI_Button5.Size = new Size(260, 50);
             sarauI_Button5.TabIndex = 4;
-            sarauI_Button5.Text = "Sanatoriosy Hospitalización";
+            sarauI_Button5.Text = "Sanatorios y Hospitalización";
             sarauI_Button5.UseVisualStyleBackColor = false;
             sarauI_Button5.Click += btnSanatorios_Click;
             // 
@@ -269,10 +261,9 @@
             sarauI_Button7.IconPadding = 8;
             sarauI_Button7.IconSize = 16;
             sarauI_Button7.IconStyle = Sara_UI_Design.SaraControls.SaraUI_IconLibrary.SaraIconStyle.Outline;
-            sarauI_Button7.Location = new Point(14, 99);
-            sarauI_Button7.Margin = new Padding(3, 4, 3, 4);
+            sarauI_Button7.Location = new Point(12, 56);
             sarauI_Button7.Name = "sarauI_Button7";
-            sarauI_Button7.Size = new Size(264, 67);
+            sarauI_Button7.Size = new Size(231, 50);
             sarauI_Button7.TabIndex = 6;
             sarauI_Button7.Text = "Cerrar Seción";
             sarauI_Button7.UseVisualStyleBackColor = false;
@@ -285,11 +276,10 @@
             sarauI_Line2.LineColor = Color.FromArgb(22, 36, 57);
             sarauI_Line2.LineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
             sarauI_Line2.LineWidth = 3;
-            sarauI_Line2.Location = new Point(10, 41);
-            sarauI_Line2.Margin = new Padding(3, 4, 3, 4);
+            sarauI_Line2.Location = new Point(9, 13);
             sarauI_Line2.Name = "sarauI_Line2";
             sarauI_Line2.Orientation = Sara_UI_Design.SaraControls.SaraUI_Line.LineOrientation.Horizontal;
-            sarauI_Line2.Size = new Size(277, 21);
+            sarauI_Line2.Size = new Size(242, 16);
             sarauI_Line2.TabIndex = 7;
             sarauI_Line2.Text = "sarauI_Line2";
             // 
@@ -308,10 +298,9 @@
             sarauI_Button4.IconPadding = 8;
             sarauI_Button4.IconSize = 16;
             sarauI_Button4.IconStyle = Sara_UI_Design.SaraControls.SaraUI_IconLibrary.SaraIconStyle.Outline;
-            sarauI_Button4.Location = new Point(0, 227);
-            sarauI_Button4.Margin = new Padding(3, 4, 3, 4);
+            sarauI_Button4.Location = new Point(0, 170);
             sarauI_Button4.Name = "sarauI_Button4";
-            sarauI_Button4.Size = new Size(297, 67);
+            sarauI_Button4.Size = new Size(260, 50);
             sarauI_Button4.TabIndex = 3;
             sarauI_Button4.Text = "Atenciones";
             sarauI_Button4.UseVisualStyleBackColor = false;
@@ -332,10 +321,9 @@
             sarauI_Button3.IconPadding = 8;
             sarauI_Button3.IconSize = 16;
             sarauI_Button3.IconStyle = Sara_UI_Design.SaraControls.SaraUI_IconLibrary.SaraIconStyle.Outline;
-            sarauI_Button3.Location = new Point(0, 156);
-            sarauI_Button3.Margin = new Padding(3, 4, 3, 4);
+            sarauI_Button3.Location = new Point(0, 117);
             sarauI_Button3.Name = "sarauI_Button3";
-            sarauI_Button3.Size = new Size(297, 67);
+            sarauI_Button3.Size = new Size(260, 50);
             sarauI_Button3.TabIndex = 2;
             sarauI_Button3.Text = "Médicos";
             sarauI_Button3.UseVisualStyleBackColor = false;
@@ -356,10 +344,9 @@
             btnPacientes.IconPadding = 8;
             btnPacientes.IconSize = 16;
             btnPacientes.IconStyle = Sara_UI_Design.SaraControls.SaraUI_IconLibrary.SaraIconStyle.Outline;
-            btnPacientes.Location = new Point(0, 85);
-            btnPacientes.Margin = new Padding(3, 4, 3, 4);
+            btnPacientes.Location = new Point(0, 64);
             btnPacientes.Name = "btnPacientes";
-            btnPacientes.Size = new Size(297, 67);
+            btnPacientes.Size = new Size(260, 50);
             btnPacientes.TabIndex = 1;
             btnPacientes.Text = "Pacientes";
             btnPacientes.UseVisualStyleBackColor = false;
@@ -380,10 +367,9 @@
             sarauI_Button1.IconPadding = 8;
             sarauI_Button1.IconSize = 16;
             sarauI_Button1.IconStyle = Sara_UI_Design.SaraControls.SaraUI_IconLibrary.SaraIconStyle.Outline;
-            sarauI_Button1.Location = new Point(0, 15);
-            sarauI_Button1.Margin = new Padding(3, 4, 3, 4);
+            sarauI_Button1.Location = new Point(0, 11);
             sarauI_Button1.Name = "sarauI_Button1";
-            sarauI_Button1.Size = new Size(297, 67);
+            sarauI_Button1.Size = new Size(260, 50);
             sarauI_Button1.TabIndex = 0;
             sarauI_Button1.Text = "sarauI_Button1";
             sarauI_Button1.UseVisualStyleBackColor = false;
@@ -392,10 +378,9 @@
             // 
             panel4.Controls.Add(sarauI_Button7);
             panel4.Controls.Add(sarauI_Line2);
-            panel4.Location = new Point(0, 678);
-            panel4.Margin = new Padding(3, 4, 3, 4);
+            panel4.Location = new Point(0, 436);
             panel4.Name = "panel4";
-            panel4.Size = new Size(297, 169);
+            panel4.Size = new Size(260, 109);
             panel4.TabIndex = 2;
             // 
             // sarauI_GridPanel1
@@ -408,13 +393,12 @@
             sarauI_GridPanel1.Controls.Add(panelMenuLateral);
             sarauI_GridPanel1.Controls.Add(panel2);
             sarauI_GridPanel1.Dock = DockStyle.Left;
-            sarauI_GridPanel1.Location = new Point(0, 60);
-            sarauI_GridPanel1.Margin = new Padding(3, 4, 3, 4);
+            sarauI_GridPanel1.Location = new Point(0, 45);
             sarauI_GridPanel1.Name = "sarauI_GridPanel1";
             sarauI_GridPanel1.Padding = new Padding(0);
             sarauI_GridPanel1.RowGap = 0;
             sarauI_GridPanel1.RowsConfig = "3fr, 5fr, 2fr";
-            sarauI_GridPanel1.Size = new Size(297, 848);
+            sarauI_GridPanel1.Size = new Size(260, 546);
             sarauI_GridPanel1.TabIndex = 4;
             // 
             // panelMenuLateral
@@ -426,10 +410,9 @@
             panelMenuLateral.Controls.Add(sarauI_Button3);
             panelMenuLateral.Controls.Add(btnPacientes);
             panelMenuLateral.Controls.Add(sarauI_Button1);
-            panelMenuLateral.Location = new Point(0, 254);
-            panelMenuLateral.Margin = new Padding(3, 4, 3, 4);
+            panelMenuLateral.Location = new Point(0, 163);
             panelMenuLateral.Name = "panelMenuLateral";
-            panelMenuLateral.Size = new Size(297, 424);
+            panelMenuLateral.Size = new Size(260, 273);
             panelMenuLateral.TabIndex = 1;
             // 
             // btnMinimizar
@@ -443,10 +426,9 @@
             btnMinimizar.BorderSize = 0;
             btnMinimizar.GradientAngle = 50F;
             btnMinimizar.IsCircular = true;
-            btnMinimizar.Location = new Point(2529, 7);
-            btnMinimizar.Margin = new Padding(3, 4, 3, 4);
+            btnMinimizar.Location = new Point(2162, 5);
             btnMinimizar.Name = "btnMinimizar";
-            btnMinimizar.Size = new Size(34, 34);
+            btnMinimizar.Size = new Size(30, 30);
             btnMinimizar.SizeMode = PictureBoxSizeMode.StretchImage;
             btnMinimizar.TabIndex = 4;
             btnMinimizar.TabStop = false;
@@ -462,10 +444,9 @@
             btnMaximizar.BorderSize = 0;
             btnMaximizar.GradientAngle = 50F;
             btnMaximizar.IsCircular = true;
-            btnMaximizar.Location = new Point(2582, 7);
-            btnMaximizar.Margin = new Padding(3, 4, 3, 4);
+            btnMaximizar.Location = new Point(2208, 5);
             btnMaximizar.Name = "btnMaximizar";
-            btnMaximizar.Size = new Size(34, 34);
+            btnMaximizar.Size = new Size(30, 30);
             btnMaximizar.SizeMode = PictureBoxSizeMode.StretchImage;
             btnMaximizar.TabIndex = 3;
             btnMaximizar.TabStop = false;
@@ -481,10 +462,9 @@
             btnCerrar.BorderSize = 0;
             btnCerrar.GradientAngle = 50F;
             btnCerrar.IsCircular = true;
-            btnCerrar.Location = new Point(2634, 7);
-            btnCerrar.Margin = new Padding(3, 4, 3, 4);
+            btnCerrar.Location = new Point(2254, 5);
             btnCerrar.Name = "btnCerrar";
-            btnCerrar.Size = new Size(34, 34);
+            btnCerrar.Size = new Size(30, 30);
             btnCerrar.SizeMode = PictureBoxSizeMode.StretchImage;
             btnCerrar.TabIndex = 2;
             btnCerrar.TabStop = false;
@@ -494,9 +474,9 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Semibold", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(64, 9);
+            label1.Location = new Point(56, 7);
             label1.Name = "label1";
-            label1.Size = new Size(427, 35);
+            label1.Size = new Size(341, 28);
             label1.TabIndex = 1;
             label1.Text = "Sistema de Gestión Hospitalaria v1.0";
             // 
@@ -511,10 +491,9 @@
             sarauI_PictureBox1.GradientAngle = 50F;
             sarauI_PictureBox1.Image = Properties.Resources.Escudo_de_la_universidad_Mariano_Gálvez_Guatemala_svg;
             sarauI_PictureBox1.IsCircular = true;
-            sarauI_PictureBox1.Location = new Point(30, 13);
-            sarauI_PictureBox1.Margin = new Padding(3, 4, 3, 4);
+            sarauI_PictureBox1.Location = new Point(26, 10);
             sarauI_PictureBox1.Name = "sarauI_PictureBox1";
-            sarauI_PictureBox1.Size = new Size(27, 27);
+            sarauI_PictureBox1.Size = new Size(24, 24);
             sarauI_PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             sarauI_PictureBox1.TabIndex = 0;
             sarauI_PictureBox1.TabStop = false;
@@ -533,9 +512,8 @@
             panel1.Controls.Add(sarauI_PictureBox1);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1445, 60);
+            panel1.Size = new Size(1213, 45);
             panel1.TabIndex = 3;
             panel1.MouseDown += panelTitleBar_MouseDown;
             // 
@@ -551,10 +529,9 @@
             btn_BotonCerrar.GradientAngle = 50F;
             btn_BotonCerrar.Image = Properties.Resources.btn_cerrar;
             btn_BotonCerrar.IsCircular = true;
-            btn_BotonCerrar.Location = new Point(1397, 9);
-            btn_BotonCerrar.Margin = new Padding(3, 4, 3, 4);
+            btn_BotonCerrar.Location = new Point(1171, 7);
             btn_BotonCerrar.Name = "btn_BotonCerrar";
-            btn_BotonCerrar.Size = new Size(34, 34);
+            btn_BotonCerrar.Size = new Size(30, 30);
             btn_BotonCerrar.SizeMode = PictureBoxSizeMode.StretchImage;
             btn_BotonCerrar.TabIndex = 8;
             btn_BotonCerrar.TabStop = false;
@@ -574,10 +551,9 @@
             btn_BotonRestaurar.GradientAngle = 50F;
             btn_BotonRestaurar.Image = Properties.Resources.btn_maximizar;
             btn_BotonRestaurar.IsCircular = true;
-            btn_BotonRestaurar.Location = new Point(1355, 9);
-            btn_BotonRestaurar.Margin = new Padding(3, 4, 3, 4);
+            btn_BotonRestaurar.Location = new Point(1135, 7);
             btn_BotonRestaurar.Name = "btn_BotonRestaurar";
-            btn_BotonRestaurar.Size = new Size(34, 34);
+            btn_BotonRestaurar.Size = new Size(30, 30);
             btn_BotonRestaurar.SizeMode = PictureBoxSizeMode.StretchImage;
             btn_BotonRestaurar.TabIndex = 7;
             btn_BotonRestaurar.TabStop = false;
@@ -597,10 +573,9 @@
             btn_BotonMinimizar.GradientAngle = 50F;
             btn_BotonMinimizar.Image = Properties.Resources.btn_minimizar;
             btn_BotonMinimizar.IsCircular = true;
-            btn_BotonMinimizar.Location = new Point(1314, 9);
-            btn_BotonMinimizar.Margin = new Padding(3, 4, 3, 4);
+            btn_BotonMinimizar.Location = new Point(1099, 7);
             btn_BotonMinimizar.Name = "btn_BotonMinimizar";
-            btn_BotonMinimizar.Size = new Size(34, 34);
+            btn_BotonMinimizar.Size = new Size(30, 30);
             btn_BotonMinimizar.SizeMode = PictureBoxSizeMode.StretchImage;
             btn_BotonMinimizar.TabIndex = 6;
             btn_BotonMinimizar.TabStop = false;
@@ -619,24 +594,22 @@
             sarauI_PictureBox2.BorderSize = 0;
             sarauI_PictureBox2.GradientAngle = 50F;
             sarauI_PictureBox2.IsCircular = true;
-            sarauI_PictureBox2.Location = new Point(705, 9);
-            sarauI_PictureBox2.Margin = new Padding(3, 4, 3, 4);
+            sarauI_PictureBox2.Location = new Point(566, 7);
             sarauI_PictureBox2.Name = "sarauI_PictureBox2";
-            sarauI_PictureBox2.Size = new Size(34, 34);
+            sarauI_PictureBox2.Size = new Size(30, 30);
             sarauI_PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             sarauI_PictureBox2.TabIndex = 5;
             sarauI_PictureBox2.TabStop = false;
             // 
             // DashboardForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1445, 908);
+            ClientSize = new Size(1213, 591);
             Controls.Add(panelContenedor);
             Controls.Add(sarauI_GridPanel1);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 4, 3, 4);
             Name = "DashboardForm";
             Text = "DashboardForm";
             ((System.ComponentModel.ISupportInitialize)sarauI_PictureBox6).EndInit();

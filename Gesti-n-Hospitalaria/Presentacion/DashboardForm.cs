@@ -192,6 +192,7 @@ namespace Presentacion
         private void btnSanatorios_Click(object sender, EventArgs e)
         {
             ActivarBotonMenu(sender);
+            AbrirVistaEnContenedor(new SanatoriosView());
         }
 
         private void btnFacturacion_Click(object sender, EventArgs e)
