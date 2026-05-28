@@ -175,7 +175,7 @@ namespace Presentacion
         private void btnPacientes_Click(object sender, EventArgs e)
         {
             ActivarBotonMenu(sender);
-            // AbrirVistaEnContenedor(new PacientesView()); 
+            AbrirVistaEnContenedor(new PacientesView()); 
         }
 
         private void btnMedicos_Click(object sender, EventArgs e)
