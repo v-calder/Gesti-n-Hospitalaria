@@ -207,11 +207,11 @@
             // 
             tabPage1.BackColor = Color.FromArgb(198, 211, 222);
             tabPage1.Controls.Add(sarauI_GridPanel5);
-            tabPage1.Location = new Point(4, 43);
+            tabPage1.Location = new Point(4, 42);
             tabPage1.Margin = new Padding(3, 4, 3, 4);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3, 4, 3, 4);
-            tabPage1.Size = new Size(1136, 613);
+            tabPage1.Size = new Size(1136, 614);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Consulta";
             // 
@@ -229,7 +229,7 @@
             sarauI_GridPanel5.Padding = new Padding(0);
             sarauI_GridPanel5.RowGap = 0;
             sarauI_GridPanel5.RowsConfig = "1fr, 9fr";
-            sarauI_GridPanel5.Size = new Size(1130, 605);
+            sarauI_GridPanel5.Size = new Size(1130, 606);
             sarauI_GridPanel5.TabIndex = 2;
             // 
             // sarauI_FlexPanel4
@@ -245,7 +245,7 @@
             sarauI_FlexPanel4.Margin = new Padding(3, 4, 3, 4);
             sarauI_FlexPanel4.Name = "sarauI_FlexPanel4";
             sarauI_FlexPanel4.Padding = new Padding(11, 1, 11, 7);
-            sarauI_FlexPanel4.Size = new Size(1130, 544);
+            sarauI_FlexPanel4.Size = new Size(1130, 545);
             sarauI_FlexPanel4.TabIndex = 2;
             sarauI_FlexPanel4.WrapContents = Sara_UI_Design.SaraControls.SaraUI_FlexPanel.FlexWrap.Wrap;
             // 
@@ -258,7 +258,7 @@
             dgvDatos.Margin = new Padding(3, 4, 3, 4);
             dgvDatos.Name = "dgvDatos";
             dgvDatos.RowHeadersWidth = 51;
-            dgvDatos.Size = new Size(1108, 504);
+            dgvDatos.Size = new Size(1108, 505);
             dgvDatos.TabIndex = 1;
             // 
             // sarauI_FlexPanel5
@@ -348,6 +348,7 @@
             btnLimpiar.TabIndex = 9;
             btnLimpiar.Text = "Limpiar";
             btnLimpiar.UseVisualStyleBackColor = false;
+            btnLimpiar.Click += btnLimpiar_Click;
             // 
             // btnBuscar
             // 
@@ -371,6 +372,7 @@
             btnBuscar.TabIndex = 8;
             btnBuscar.Text = "Buscar";
             btnBuscar.UseVisualStyleBackColor = false;
+            btnBuscar.Click += btnBuscar_Click;
             // 
             // txtBuscar
             // 
@@ -410,11 +412,11 @@
             // 
             tabPage2.BackColor = Color.FromArgb(198, 211, 222);
             tabPage2.Controls.Add(sarauI_GridPanel3);
-            tabPage2.Location = new Point(4, 43);
+            tabPage2.Location = new Point(4, 42);
             tabPage2.Margin = new Padding(3, 4, 3, 4);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3, 4, 3, 4);
-            tabPage2.Size = new Size(1136, 613);
+            tabPage2.Size = new Size(1136, 614);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Gestion";
             // 
@@ -432,7 +434,7 @@
             sarauI_GridPanel3.Padding = new Padding(2, 3, 2, 3);
             sarauI_GridPanel3.RowGap = 1;
             sarauI_GridPanel3.RowsConfig = "9fr, 1fr";
-            sarauI_GridPanel3.Size = new Size(1130, 605);
+            sarauI_GridPanel3.Size = new Size(1130, 606);
             sarauI_GridPanel3.TabIndex = 0;
             // 
             // sarauI_FlexPanel6
@@ -446,11 +448,11 @@
             sarauI_FlexPanel6.Controls.Add(btnNuevo);
             sarauI_FlexPanel6.Direction = Sara_UI_Design.SaraControls.SaraUI_FlexPanel.FlexDirection.Row;
             sarauI_FlexPanel6.Justify = Sara_UI_Design.SaraControls.SaraUI_FlexPanel.JustifyContent.End;
-            sarauI_FlexPanel6.Location = new Point(2, 528);
+            sarauI_FlexPanel6.Location = new Point(2, 543);
             sarauI_FlexPanel6.Margin = new Padding(3, 4, 3, 4);
             sarauI_FlexPanel6.Name = "sarauI_FlexPanel6";
             sarauI_FlexPanel6.Padding = new Padding(0, 3, 11, 0);
-            sarauI_FlexPanel6.Size = new Size(1122, 57);
+            sarauI_FlexPanel6.Size = new Size(1126, 59);
             sarauI_FlexPanel6.TabIndex = 1;
             sarauI_FlexPanel6.WrapContents = Sara_UI_Design.SaraControls.SaraUI_FlexPanel.FlexWrap.NoWrap;
             // 
@@ -468,7 +470,7 @@
             btnEliminar.IconPadding = 8;
             btnEliminar.IconSize = 12;
             btnEliminar.IconStyle = Sara_UI_Design.SaraControls.SaraUI_IconLibrary.SaraIconStyle.Outline;
-            btnEliminar.Location = new Point(985, 3);
+            btnEliminar.Location = new Point(989, 3);
             btnEliminar.Margin = new Padding(3, 4, 3, 4);
             btnEliminar.Name = "btnEliminar";
             btnEliminar.Size = new Size(126, 47);
@@ -491,7 +493,7 @@
             btnEditar.IconPadding = 8;
             btnEditar.IconSize = 12;
             btnEditar.IconStyle = Sara_UI_Design.SaraControls.SaraUI_IconLibrary.SaraIconStyle.Outline;
-            btnEditar.Location = new Point(849, 3);
+            btnEditar.Location = new Point(853, 3);
             btnEditar.Margin = new Padding(3, 4, 3, 4);
             btnEditar.Name = "btnEditar";
             btnEditar.Size = new Size(126, 47);
@@ -514,7 +516,7 @@
             btnCancelar.IconPadding = 8;
             btnCancelar.IconSize = 12;
             btnCancelar.IconStyle = Sara_UI_Design.SaraControls.SaraUI_IconLibrary.SaraIconStyle.Outline;
-            btnCancelar.Location = new Point(713, 3);
+            btnCancelar.Location = new Point(717, 3);
             btnCancelar.Margin = new Padding(3, 4, 3, 4);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(126, 47);
@@ -537,7 +539,7 @@
             btnGuardar.IconPadding = 8;
             btnGuardar.IconSize = 12;
             btnGuardar.IconStyle = Sara_UI_Design.SaraControls.SaraUI_IconLibrary.SaraIconStyle.Outline;
-            btnGuardar.Location = new Point(577, 3);
+            btnGuardar.Location = new Point(581, 3);
             btnGuardar.Margin = new Padding(3, 4, 3, 4);
             btnGuardar.Name = "btnGuardar";
             btnGuardar.Size = new Size(126, 47);
@@ -560,7 +562,7 @@
             btnNuevo.IconPadding = 8;
             btnNuevo.IconSize = 12;
             btnNuevo.IconStyle = Sara_UI_Design.SaraControls.SaraUI_IconLibrary.SaraIconStyle.Outline;
-            btnNuevo.Location = new Point(441, 3);
+            btnNuevo.Location = new Point(445, 3);
             btnNuevo.Margin = new Padding(3, 4, 3, 4);
             btnNuevo.Name = "btnNuevo";
             btnNuevo.Size = new Size(126, 47);
@@ -582,7 +584,7 @@
             sarauI_GridPanel4.Padding = new Padding(11, 13, 11, 13);
             sarauI_GridPanel4.RowGap = 10;
             sarauI_GridPanel4.RowsConfig = "1fr";
-            sarauI_GridPanel4.Size = new Size(1122, 524);
+            sarauI_GridPanel4.Size = new Size(1126, 539);
             sarauI_GridPanel4.TabIndex = 0;
             // 
             // panelGestionIzq
@@ -592,10 +594,10 @@
             panelGestionIzq.ChildSpacing = 10;
             panelGestionIzq.Direction = Sara_UI_Design.SaraControls.SaraUI_FlexPanel.FlexDirection.Row;
             panelGestionIzq.Justify = Sara_UI_Design.SaraControls.SaraUI_FlexPanel.JustifyContent.Start;
-            panelGestionIzq.Location = new Point(567, 13);
+            panelGestionIzq.Location = new Point(568, 13);
             panelGestionIzq.Margin = new Padding(3, 4, 3, 4);
             panelGestionIzq.Name = "panelGestionIzq";
-            panelGestionIzq.Size = new Size(544, 497);
+            panelGestionIzq.Size = new Size(547, 513);
             panelGestionIzq.TabIndex = 1;
             panelGestionIzq.WrapContents = Sara_UI_Design.SaraControls.SaraUI_FlexPanel.FlexWrap.NoWrap;
             // 
@@ -609,7 +611,7 @@
             panelGestionDer.Location = new Point(11, 13);
             panelGestionDer.Margin = new Padding(3, 4, 3, 4);
             panelGestionDer.Name = "panelGestionDer";
-            panelGestionDer.Size = new Size(544, 497);
+            panelGestionDer.Size = new Size(547, 513);
             panelGestionDer.TabIndex = 0;
             panelGestionDer.WrapContents = Sara_UI_Design.SaraControls.SaraUI_FlexPanel.FlexWrap.NoWrap;
             // 
@@ -652,13 +654,10 @@
         private Label label1;
         private Sara_UI_Design.SaraControls.SaraUI_FlexPanel sarauI_FlexPanel2;
         private Sara_UI_Design.SaraControls.SaraUI_GridPanel sarauI_GridPanel1;
-        private Sara_UI_Design.SaraControls.SaraUI_TabControl sarauI_TabControl1;
-        private TabPage tabPage1;
         private Sara_UI_Design.SaraControls.SaraUI_TextBox sarauI_TextBox1;
         private DataGridView dataGridView1;
         private Label label4;
         private Label label3;
-        private TabPage tabPage2;
         private Sara_UI_Design.SaraControls.SaraUI_GridPanel sarauI_GridPanel3;
         private Sara_UI_Design.SaraControls.SaraUI_FlexPanel sarauI_FlexPanel6;
         private Sara_UI_Design.SaraControls.SaraUI_GridPanel sarauI_GridPanel4;
@@ -675,9 +674,6 @@
         private Sara_UI_Design.SaraControls.SaraUI_FlexPanel sarauI_FlexPanel5;
         protected Label lblTotalRegistros;
         private Panel panel1;
-        private Sara_UI_Design.SaraControls.SaraUI_Button btnImprimir;
-        private Sara_UI_Design.SaraControls.SaraUI_Button btnLimpiar;
-        private Sara_UI_Design.SaraControls.SaraUI_Button btnBuscar;
         protected Sara_UI_Design.SaraControls.SaraUI_TextBox txtBuscar;
         protected Label lblBuscar;
         protected Sara_UI_Design.SaraControls.SaraUI_Button btnNuevo;
@@ -685,5 +681,11 @@
         protected Sara_UI_Design.SaraControls.SaraUI_Button btnCancelar;
         protected Sara_UI_Design.SaraControls.SaraUI_Button btnEditar;
         protected Sara_UI_Design.SaraControls.SaraUI_Button btnEliminar;
+        protected Sara_UI_Design.SaraControls.SaraUI_Button btnLimpiar;
+        protected Sara_UI_Design.SaraControls.SaraUI_Button btnBuscar;
+        protected TabPage tabPage1;
+        protected TabPage tabPage2;
+        protected Sara_UI_Design.SaraControls.SaraUI_Button btnImprimir;
+        protected Sara_UI_Design.SaraControls.SaraUI_TabControl sarauI_TabControl1;
     }
 }
